@@ -1,0 +1,10 @@
+
+\.idea/
+
+db\.sqlite3
+
+averysom_me/__pycache__/
+
+website/__pycache__/
+
+website/migrations/__pycache__/
