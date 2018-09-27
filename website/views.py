@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.http import HttpResponse, HttpResponseNotFound, Http404,  HttpResponseRedirect
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -9,3 +10,6 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
+
+def redirect_to_r(request):
+    return HttpResponseRedirect('/r')

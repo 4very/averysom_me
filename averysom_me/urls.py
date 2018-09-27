@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 from django.urls import path
+from django.http import HttpResponse, HttpResponseNotFound, Http404,  HttpResponseRedirect
+from website import views
+
 
 urlpatterns = [
+    path('', views.redirect_to_r, name="Redirecting..."),
     path('admin/', admin.site.urls),
     path('r', include('website.urls')),
 ]
