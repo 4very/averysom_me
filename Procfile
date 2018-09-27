@@ -1,1 +1,1 @@
-web: gunicorn averyom_me.wsgi --log-file -
+web: gunicorn averysom_me.wsgi --log-file -
