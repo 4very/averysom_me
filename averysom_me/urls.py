@@ -22,6 +22,7 @@ from website import views
 
 urlpatterns = [
     path('', views.redirect_to_r, name="Redirecting..."),
+    path('r/', views.redirect_to_r, name="Redirecting..."),
     path('admin/', admin.site.urls),
     path('r', include('website.urls')),
 ]
