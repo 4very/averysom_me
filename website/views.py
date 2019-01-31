@@ -8,8 +8,6 @@ class HomePageView(TemplateView):
         return render(request, 'index.html', context=None)
 
 
-class AboutPageView(TemplateView):
-    template_name = "about.html"
 
 def redirect_to_r(request):
     return HttpResponseRedirect('/r')
